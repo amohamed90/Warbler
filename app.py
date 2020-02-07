@@ -16,7 +16,7 @@ app = Flask(__name__)
 # Get DB_URI from environ variable (useful for production/testing) or,
 # if not set there, use development local db.
 app.config['SQLALCHEMY_DATABASE_URI'] = (
-    os.environ.get('DATABASE_URL', 'postgres:///warbler'))
+    os.environ.get('DATABASE_URL', 'postgres://geuqnwefczfzzs:751ccbd829983a5a7a4fc1a71122fa654b17a8c166033b66079e8d3e4ba40374@ec2-3-213-192-58.compute-1.amazonaws.com:5432/d8779u0g1dgaeo'))
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_ECHO'] = False
@@ -328,10 +328,10 @@ def like_unlike(message_id, action):
             if action == 'unlike':
                 g.user.unlike_message(message)
             db.session.commit()
-    
+
     else:
         flash("You must be following the user to like their message!", "danger")
-    
+
     return redirect('/')
 
 
