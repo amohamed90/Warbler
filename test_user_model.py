@@ -31,7 +31,7 @@ db.create_all()
 
 
 class UserModelTestCase(TestCase):
-    """Test views for messages."""
+    """Test views for users."""
 
     def setUp(self):
         """Create test client, add sample data."""
@@ -119,4 +119,4 @@ class UserModelTestCase(TestCase):
         with self.assertRaises(IntegrityError) as raised:
             User.signup("testuser1", "user123@user.com", "PASSWORD", None)
             db.session.commit()
-        self.assertIn('duplicate key value violates unique constraint', str(raised.exception))  
+        self.assertIn('duplicate key value violates unique constraint', str(raised.exception))
