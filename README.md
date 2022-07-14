@@ -1,5 +1,5 @@
 # Warbler
-A Twitter clone with a cooler bird.
+A Twitter clone.
 
 ![Screenshot of Warbler sign-in page](static/images/Warbler.png)
 
