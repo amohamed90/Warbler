@@ -1,7 +1,7 @@
 # Warbler
 A Twitter clone with a cooler bird.
 
-![Screenshot of Warbler sign-in page](static/images/warbler-home.png)
+![Screenshot of Warbler sign-in page](static/images/Warbler.png)
 
 ## Getting Started
 Follow the instructions below to get a copy of the project up and running on your machine for development and testing. See deployment for notes on how to deploy the project on a live system.
